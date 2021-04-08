@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+import { Home, ChatRoom } from 'components'
+import { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// маршруты
+const routes = [
+  { path: '/', name: 'Home', Component: Home },
+  { path: '/:roomId', name: 'ChatRoom', Component: ChatRoom }
+]
 
-export default App;
+export const App = () => (
+  <Router>
+    <Container style={{ maxWidth: '512px' }}>
+      <h1 className='mt-2 text-center'>React Chat App</h1>
+      <Switch>
+        {routes.map(({ path, Component }) => (
+          <Route key={path} path={path} exact>
+            <Component />
+          </Route>
+        ))}
+      </Switch>
+    </Container>
+  </Router>
+)
