@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "./server dev",
-    "client": "./client start",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
     "start": "concurrently \"npm:server\" \"npm:client\""
   },
   "repository": {
