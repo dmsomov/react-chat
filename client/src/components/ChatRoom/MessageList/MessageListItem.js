@@ -7,8 +7,7 @@ export const MessageListItem = ({ msg, removeMessage }) => {
   const handleRemoveMessage = (id) => {
     removeMessage(id)
   }
-  console.log(msg)
-  const { messageId, messageText, senderName, createAt, currentUser } = msg
+  const { messageId, messageText, senderName, createdAt, currentUser } = msg
   
   return (
     <ListGroup.Item
@@ -21,7 +20,7 @@ export const MessageListItem = ({ msg, removeMessage }) => {
       >
         <Card.Header className='d-flex justify-content-between align-items-center'>
           {/* передаем TimeAgo дату создание сообщения */}
-          <Card.Text as={TimeAgo} date={createAt} className='small' />
+          <Card.Text as={TimeAgo} date={createdAt} className='small' />
           <Card.Text>{senderName}</Card.Text>
         </Card.Header>
         <Card.Body className='d-flex justify-content-between align-items-center'>

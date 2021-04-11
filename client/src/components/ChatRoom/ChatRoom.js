@@ -10,8 +10,7 @@ export  function ChatRoom() {
   const { roomId } = useParams()
   const [username] = useLocalStorage('username')
   const { users, messages, sendMessage, removeMessage } = useChat(roomId)
-  console.log(messages)
-  console.log(roomId)
+
   return(
     <Container>
       <h2 className='text center'>Room: {roomId === 'job' ? 'Job' : 'Free'}</h2>

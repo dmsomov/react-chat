@@ -13,55 +13,6 @@
       "senderName": "Alice",
       "messageText": "Go back to work!",
       "createdAt": "2021-02-15"
-    },
-    {
-      "messageId": "e2_LxVKE",
-      "createdAt": "2021-04-11T11:54:50.333Z",
-      "userId": "piDXUt6M",
-      "messageText": "vjhvvj",
-      "senderName": "John"
-    },
-    {
-      "messageId": "U--cA3Tg",
-      "createdAt": "2021-04-11T11:55:12.341Z",
-      "userId": "piDXUt6M",
-      "messageText": "Hello)",
-      "senderName": "John"
-    },
-    {
-      "messageId": "0d0Ef4q6",
-      "createdAt": "2021-04-11T11:56:37.775Z",
-      "userId": "piDXUt6M",
-      "messageText": "Hello)",
-      "senderName": "Bob"
-    },
-    {
-      "messageId": "FAJKcvv6",
-      "createdAt": "2021-04-11T11:56:49.834Z",
-      "userId": "piDXUt6M",
-      "messageText": "vhgv",
-      "senderName": "Bob"
-    },
-    {
-      "messageId": "xYdOt-wL",
-      "createdAt": "2021-04-11T12:00:12.446Z",
-      "userId": "piDXUt6M",
-      "messageText": "tre",
-      "senderName": "Bob"
-    },
-    {
-      "messageId": "PFP5k520",
-      "createdAt": "2021-04-11T12:00:25.749Z",
-      "userId": "piDXUt6M",
-      "messageText": "kbnmbnm",
-      "senderName": "Bob"
-    },
-    {
-      "messageId": "ld3fKFL2",
-      "createdAt": "2021-04-11T12:00:41.941Z",
-      "userId": "piDXUt6M",
-      "messageText": "bmb",
-      "senderName": "Bob"
     }
   ]
 }

@@ -48,7 +48,6 @@ export const useChat = (roomId) => {
       // если значение свойства "userId" объекта сообщения совпадает с id пользователя,
       // то добавляем в объект сообщения свойство "currentUser" со значением "true",
       // иначе, просто возвращаем объект сообщения
-      console.log(messages)
       const newMessages = messages.map((msg) => msg.userId === userId ? { ...msg, currentUser: true }: msg)
       // обновляем массив сообщений
       setMessages(newMessages)
