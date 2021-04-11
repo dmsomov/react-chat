@@ -19,7 +19,7 @@ const GlodalStyles = createGlobalStyle`
 }
 `
 
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 render(
   <>
     <GlodalStyles />

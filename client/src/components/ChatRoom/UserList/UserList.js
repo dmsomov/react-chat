@@ -1,4 +1,4 @@
-import { Accordion, Card, Button, Button, Badge } from 'react-bootstrap'
+import { Accordion, Card, Button, Badge } from 'react-bootstrap'
 import { RiRadioButtonLine } from 'react-icons/ri'
 
 // компонент принимает объект с пользователями - нормализованную структуру

@@ -7,7 +7,7 @@ export const MessageListItem = ({ msg, removeMessage }) => {
   const handleRemoveMessage = (id) => {
     removeMessage(id)
   }
-
+  console.log(msg)
   const { messageId, messageText, senderName, createAt, currentUser } = msg
   
   return (

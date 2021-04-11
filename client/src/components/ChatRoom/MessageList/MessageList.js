@@ -33,7 +33,7 @@ export const MessageList = ({ messages, removeMessage }) => {
             removeMessage={removeMessage}
           />
         ))}
-          <span ref={messagesEndRef}></span>
+        <span ref={messagesEndRef}></span>
       </ListGroup>
     </>
   )

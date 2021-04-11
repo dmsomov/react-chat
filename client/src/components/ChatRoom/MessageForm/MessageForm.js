@@ -4,9 +4,8 @@ import { Picker } from 'emoji-mart'
 import { FiSend } from 'react-icons/fi'
 import { GrEmoji } from 'react-icons/gr'
 
-export const MessageForm = ({ username, sendMessage }) = {
+export const MessageForm = ({ username, sendMessage }) => {
   const [text, setText] = useState('')
-  
   const [showEmoji, setShowEmoji] = useState(false)
 
   // обрабат изменение текста
@@ -27,6 +26,7 @@ export const MessageForm = ({ username, sendMessage }) = {
   const handleSendMessage = (e) => {
     e.preventDefault()
     const trimmed = text.trim()
+  
     if (trimmed) {
       sendMessage({ messageText: text, senderName: username })
       setText('')

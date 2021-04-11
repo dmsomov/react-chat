@@ -48,6 +48,7 @@ export const useChat = (roomId) => {
       // если значение свойства "userId" объекта сообщения совпадает с id пользователя,
       // то добавляем в объект сообщения свойство "currentUser" со значением "true",
       // иначе, просто возвращаем объект сообщения
+      console.log(messages)
       const newMessages = messages.map((msg) => msg.userId === userId ? { ...msg, currentUser: true }: msg)
       // обновляем массив сообщений
       setMessages(newMessages)
@@ -61,10 +62,10 @@ export const useChat = (roomId) => {
 
   // ф-я отправки сообщения
   // принимает обьект с текстом сообщения и именем отправителя
-  const sendMessages = ({ messageText, senderName }) => {
+  const sendMessage = ({ messageText, senderName }) => {
 
     // добавляем в обьект id пользователя при отправке на сервер
-    socketRef.current.emit('messages:add', {
+    socketRef.current.emit('message:add', {
       userId,
       messageText,
       senderName
@@ -79,7 +80,6 @@ export const useChat = (roomId) => {
   useBeforeUnload(() => {
     socketRef.current.emit('user:leave', userId)
   })
-
   // хук возвращвет пользователей, сообщений, ф-и для отправки удаления сообщений
-  return { users, messages, sendMessages, removeMessage }
+  return { users, messages, sendMessage, removeMessage }
 }

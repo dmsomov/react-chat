@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npm run --cwd server dev",
-    "client": "npm run --cwd client start",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "server": "./server dev",
+    "client": "./client start",
+    "start": "concurrently \"npm:server\" \"npm:client\""
   },
   "repository": {
     "type": "git",

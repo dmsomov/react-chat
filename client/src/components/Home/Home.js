@@ -26,7 +26,7 @@ export function Home() {
     // выполняем нажатие кнопки
     linkRef.current.click()
   }
-
+  console.log('HOME')
   const trimmed = username.trim()
 
   return (
@@ -47,7 +47,7 @@ export function Home() {
         </Form.Control>
       </Form.Group>
       {trimmed && (
-        <Button variant='success' as={Link} to={`/${roomId}`} ref={linkRed}>
+        <Button variant='success' as={Link} to={`/${roomId}`} ref={linkRef}>
         Chat
         </Button>
       )}
